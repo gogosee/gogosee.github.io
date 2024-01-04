@@ -33,8 +33,8 @@
 > (MySQL) -> flush privileges; 
 
 ## mysql版本8，在给新用户授权时，发生了变化
-> create user 'root'@'localhost' identified by  'password';
-create user 'root'@'%' identified by 'passwd';
-grant all privileges on *.* to 'root'@'localhost' with grant option;
-grant all privileges on *.* to 'root'@'%' with grant option;
-flush privileges;
+- create user 'root'@'localhost' identified by  'password';
+- create user 'root'@'%' identified by 'passwd';
+- grant all privileges on *.* to 'root'@'localhost' with grant option;
+- grant all privileges on *.* to 'root'@'%' with grant option;
+- flush privileges;
