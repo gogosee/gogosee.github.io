@@ -39,7 +39,7 @@
 - flush privileges;
 
 ## 配置防火墙
-- systemctl status firewalld # 查看防火墙状态，active(running)为已启动
-- firewall-cmd --zone=public --add-service=mysql --permanent # 将MySQL添加到防火墙允许列表
-- firewall-cmd --reload # 重载防火墙设置
-- firewall-cmd --zone=public --list-services # 查看防火墙允许的服务列表
+1. systemctl status firewalld # 查看防火墙状态，active(running)为已启动
+2. firewall-cmd --zone=public --add-service=mysql --permanent # 将MySQL添加到防火墙允许列表
+3. firewall-cmd --reload # 重载防火墙设置
+4. firewall-cmd --zone=public --list-services # 查看防火墙允许的服务列表
