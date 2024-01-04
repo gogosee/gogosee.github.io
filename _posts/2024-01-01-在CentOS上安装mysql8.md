@@ -33,3 +33,8 @@
 - grant all privileges on *.* to 'root'@'localhost' with grant option;
 - grant all privileges on *.* to 'root'@'%' with grant option;
 - flush privileges;
+## 配置防火墙
+- systemctl status firewalld # 查看防火墙状态，active(running)为已启动
+- firewall-cmd --zone=public --add-service=mysql --permanent # 将MySQL添加到防火墙允许列表
+- firewall-cmd --reload # 重载防火墙设置
+- firewall-cmd --zone=public --list-services # 查看防火墙允许的服务列表
